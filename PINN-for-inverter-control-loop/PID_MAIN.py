@@ -311,7 +311,7 @@ class PID():
 
 if __name__ == "__main__":
 
-    input_data_path = 'data/pi/0122FltQControl.csv'
+    input_data_path = '../data/inverter-control-loop/0122FltQControl.csv'
 
     microgird = PID(path=input_data_path, index=None,
                     st=0.,
@@ -324,7 +324,7 @@ if __name__ == "__main__":
                     iterations=5000000)
     # microgird.load_model('save_model/model_testNone.ckpt-200000.pt',
     #                      load_fnamevar_path = 'PI_variables_ModelSave_0301.dat')
-    # microgird.train()
+    microgird.train()
     print(microgird.input_data.shape)
     print(microgird.y)
     print(microgird.input_data)
