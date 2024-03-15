@@ -144,10 +144,7 @@ class SYNC():
         def boundary(_, on_initial):
             return on_initial
         '''
-        这里先目前假设的只能观测到工程实际值, 如果运行失败在考虑增加其他学术理论观测值，比如Iqref， DeltaIq的初始值 / 全部值
-        2024-01-15 五个观测成功
-        2024-02-02 四个观测成功
-        2024-03-05 三个测试成功-工程可行
+        observation data and the initial conditions
         '''
         observe_y0 = dde.icbc.PointSetBC(observe_t, y[:, 0:1], component=0)
         observe_y1 = dde.icbc.PointSetBC(observe_t, y[:, 1:2], component=1)
