@@ -9,14 +9,14 @@ Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 4
 >LATEX CITATION:
 >
 >@unpublished{LikunSchenPESGM2024,  
-  author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Wang, Bo and Gareth Harrison},  
+  author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Wang, Bo and Harrison, Gareth},  
   title  = {Physics-Informed Neural Network for Microgrid Forward/Inverse Ordinary Differential Equations},  
   note   = {IEEE PES General Meeting},  
   year   = {2024},  
 >}
 >
 >@unpublished{LikunSchenTPS2024,  
-  author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Gareth, Harrison},  
+  author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Harrison, Gareth},  
   title  = {Improved PINN-Based Parameter Estimation for Optimizing Microgrid DER Analysis-Part I},  
   note   = {Submitted to IEEE Trans. on Power Systems},  
   year   = {2024},  
