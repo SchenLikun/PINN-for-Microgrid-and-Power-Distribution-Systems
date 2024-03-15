@@ -269,7 +269,7 @@ class PID():
 
 if __name__ == "__main__":
 
-    input_data_path = 'data/inverter-control-loop/0122FltDControl.csv'
+    input_data_path = '../data/inverter-control-loop/0122FltDControl.csv'
 
     microgird = PID(path=input_data_path)
 
