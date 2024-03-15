@@ -22,4 +22,7 @@ Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 4
   year   = {2024},  
 >}
   
-We still in process the script
+# how to use
+The example codes for both sync- and inverter-based DERs are './PINN-for-Synchronous/SYNC_MAIN.py'[./PINN-for-Synchronous/SYNC_MAIN.py](url) and './PINN-for-inverter-control-loop/PID_MAIN.py'.
+
+Before running, plz remember to install Torch and CUDA correctly.
