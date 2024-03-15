@@ -1,9 +1,9 @@
 # Introduction
-This project aims for solving the ODEs in mircrogird, especially for forward (simulation) and inverse (parameters estimation) calculation of synchronous- and inverter-based DERs.
+#### This project aims for solving the ODEs in mircrogird, especially for forward (simulation) and inverse (parameters estimation) calculation of synchronous- and inverter-based DERs.
 
 # Env. Info.
-Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 4
-
+#### 1. Our test env: Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 8
+#### 2. RTDS: RSCAD FX Version >= 1.2
 # Basic principles plz refer to our papers
 
 >LATEX CITATION:
