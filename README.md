@@ -41,6 +41,6 @@ This capability is precisely why we have applied this method. For a detailed und
 
 ## About RTDS microgrid model
 The established model is saved in `./RTDS-MODEL/SimpleMicrogrid`，the directory contains the following files.
-1. `Microgrid1.dfx` : our established model, contains really perfect control and satisfying amount of detailed controls and detection points XD.
+1. `Microgrid1.dfx` : our established model, contains really perfect control and satisfying amount of detailed controls and measurement points XD. (I'm really super satisfied with the microgrid model I've built, even though my supervisor thinks it's quite ordinary. Still, I believe I've done a great job.)
 2. `Microgrid1.sib` : runtime file, using this for RTDS simulation while running.
 3. `Microgrid1.pdf` : official microgrid introduction document, differs from our model, but still has some reference value.
