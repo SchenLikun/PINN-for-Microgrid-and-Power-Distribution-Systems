@@ -300,11 +300,11 @@ if __name__ == "__main__":
     microgird = SYNC(path=input_data_path,
                     st=0.2,
                     et=0.5,
-                    index = 'TranAll')
+                    index = 'TransOut')
 
     # # microgird.build()
-    microgird.build(transform='all',
-                    net=dde.nn.FNN([6] + [100] * 3 + [3], "swish", "Glorot uniform"),
+    microgird.build(transform='output',
+                    net=dde.nn.FNN([1] + [100] * 3 + [3], "swish", "Glorot uniform"),
                     lr=1e-3,
                     iterations=3000000)
     # microgird.load_model('save_model/model_testNone.ckpt-200000.pt',

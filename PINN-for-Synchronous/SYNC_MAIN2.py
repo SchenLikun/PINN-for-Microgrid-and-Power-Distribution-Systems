@@ -300,10 +300,10 @@ if __name__ == "__main__":
     microgird = SYNC(path=input_data_path,
                     st=0.2,
                     et=0.5,
-                    index = 'TranAll')
+                    index = 'TransIn')
 
     # # microgird.build()
-    microgird.build(transform='all',
+    microgird.build(transform='input',
                     net=dde.nn.FNN([6] + [100] * 3 + [3], "swish", "Glorot uniform"),
                     lr=1e-3,
                     iterations=3000000)
