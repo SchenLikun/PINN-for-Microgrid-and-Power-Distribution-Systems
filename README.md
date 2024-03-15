@@ -1,7 +1,7 @@
 # Introduction
 This project aims for solving the ODEs in mircrogird, especially for forward (simulation) and inverse (parameters estimation) calculation of synchronous- and inverter-based DERs.
 
-Python Version 3.11 background PyTorch 2.0.1 + CU117
+Python Version 3.11 backends PyTorch 2.0.1 + CU117
 
 >LATEX CITATION:
 >
