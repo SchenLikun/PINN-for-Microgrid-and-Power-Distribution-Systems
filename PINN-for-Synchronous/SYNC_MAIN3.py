@@ -296,7 +296,7 @@ class SYNC():
 
 if __name__ == "__main__":
 
-    input_data_path = 'data/history_data/927testforTe2.csv'
+    input_data_path = '../data/synchronous-machine/927testforTe2.csv'
     microgird = SYNC(path=input_data_path,
                     st=0.2,
                     et=0.5,
