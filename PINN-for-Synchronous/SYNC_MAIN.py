@@ -300,13 +300,16 @@ if __name__ == "__main__":
     microgird = SYNC(path=input_data_path,
                     st=0.2,
                     et=0.5,
-                    index = 'TranAll')
+                    index = 'TransAll')
 
     # # microgird.build()
     microgird.build(transform='all',
                     net=dde.nn.FNN([6] + [100] * 3 + [3], "swish", "Glorot uniform"),
                     lr=1e-3,
-                    iterations=3000000)
+                    iterations=10000000)
+    '''
+    reload model from the existing traing, uncomment this line
+    '''
     # microgird.load_model('save_model/model_testNone.ckpt-200000.pt',
     #                      load_fnamevar_path = 'PI_variables_ModelSave_0301.dat')
     microgird.train()
