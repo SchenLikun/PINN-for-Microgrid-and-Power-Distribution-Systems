@@ -1,0 +1,12 @@
+int grid_status;
+float temp_float;
+float temp_float2;
+float temp_float3;
+string temp_string;
+string temp_string2;
+
+fprintf(stdmsg, "Initialization of RTDS simulation");
+
+ListenOnPort(1117, true); 
+
+fprintf(stdmsg, "Execution of script is done\n");

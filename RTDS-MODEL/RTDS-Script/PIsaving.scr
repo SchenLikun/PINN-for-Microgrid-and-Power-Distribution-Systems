@@ -1,0 +1,68 @@
+//**************************************************************************
+//	Script Developed By:	Chen Likun
+//  Contact:                chenlk@whu.edu.cn
+//  Description:            Only English can be used in this Script. This file aim to automate the batch simulaion for data-driven methods.
+//  Create time:            2023-12-07
+//  Update time:           2024-01-08
+//  btw: ZheGeWenJianZhiNengFangZhenGuZhang,HaoJBFanRen,WoTMDZhenShiYiTianYeGanBuXiaQuLe,ShenMeShiHouCaiKeYiFaCaiAAAAA!!!!!
+//**************************************************************************
+
+//**************************************************************************
+//  Local Variables setting
+//************************************************************************** 
+int i,numCases;
+float KpBase,KiBase;
+string datafilename,resultsfilename,dummy;
+
+//**************************************************************************
+//  Initialization
+//************************************************************************** 
+numCases = 10; // number of case
+KpBase = 0.01; //Kp STEP
+KiBase = 0.1; //Ki STEP
+
+
+//	Start the simulation
+Start;
+
+//	Wait for system initialize
+SUSPEND 6;
+
+for( i=0 ; i<=numCases ; i++ ){
+//************************************************************************** 
+//  Initialize the Simulation
+//************************************************************************** 
+
+SetSwitch "BATTERY" = 1;
+SetSwitch "GRID" = 7;
+SetSwitch "PV" = 1;
+SetSwitch "loadSwitch" = 1;
+SetSwitch "DIESEL" = 1;
+
+
+//  generate dataset, different PI coef
+SetSlider "Subsystem #1 : CTLs : Inputs : KpVDC" = 0.5 + i*KpBase;
+SetSlider "Subsystem #1 : CTLs : Inputs : KiVDC" = 5 + i*KiBase;
+
+//************************************************************************** 
+//  Fault Setting 
+//************************************************************************** 
+
+PushButton "FAULT";
+ReleaseButton "FAULT";
+
+// Refresh the Plots for saving .csv file
+// UpdatePlots;
+
+// Wait for the system to stabilize
+SUSPEND 0.5;
+
+// Save the file
+SavePlotToCSV "PIMeasurement","C:\Users\he\Documents\RSCAD\RTDS_USER_FX\fileman\CHENLiKun\PINN_MG1\data\pi\3phaseFLTKp0.5Ki5Step0.1No."::itoa(i)::".csv";
+
+
+}
+
+//Stop the simulation
+Stop;
+
