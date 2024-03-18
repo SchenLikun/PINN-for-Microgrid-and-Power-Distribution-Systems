@@ -303,8 +303,11 @@ if __name__ == "__main__":
                     index = 'TransAll')
 
     # # microgird.build()
+    '''
+    The best performance appears under [6] + [50] * 3 + [3] NN structure with Flt events during operation
+    '''
     microgird.build(transform='all',
-                    net=dde.nn.FNN([6] + [100] * 3 + [3], "swish", "Glorot uniform"),
+                    net=dde.nn.FNN([6] + [50] * 3 + [3], "swish", "Glorot uniform"),
                     lr=1e-3,
                     iterations=10000000)
     '''
