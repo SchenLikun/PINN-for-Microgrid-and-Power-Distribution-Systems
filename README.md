@@ -1,6 +1,8 @@
 # Introduction
 #### This project aims for solving the ODEs in mircrogird, especially for forward (simulation) and inverse (parameters estimation) calculation of synchronous- and inverter-based DERs.
 
+#### If you wanna get access to the full data, please contact dongxz@whu.edu.cn , only sample data files are given here for replicating our paper.
+
 # Env. Info.
 #### 1. Our test env: Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 8
 #### 2. RTDS: RSCAD FX Version >= 1.2
@@ -17,7 +19,7 @@
 >
 >@unpublished{LikunSchenTPS2024,  
   author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Harrison, Gareth},  
-  title  = {Improved PINN-Based Parameter Estimation for Optimizing Microgrid DER Analysis-Part I},  
+  title  = {Improved PINN-Based Parameters Estimation for Distributed Energy Resources Analysis in Microgrid},  
   note   = {Submitted to IEEE Trans. on Power Systems},  
   year   = {2024},  
 >}
