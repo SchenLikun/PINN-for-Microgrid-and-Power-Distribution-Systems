@@ -1,7 +1,9 @@
 # Introduction
 #### This project aims for solving the ODEs in mircrogird, especially for forward (simulation) and inverse (parameters estimation) calculation of synchronous- and inverter-based DERs. Futhermore, it can be used in microgrid equivalent modeling.
 
-#### If you request collaboration or tech. support, please contact dongxz@whu.edu.cn.
+#### Thanks to the contributions made by Yifan Wang, Wei Sun, Gareth Harrison, Bo Wang and Lei Shang.
+
+#### If you request collaboration or tech. support, please contact W.Sun@ed.ac.uk (Dr. Wei Sun, Edinburgh University) dongxz@whu.edu.cn (Prof. Dong, Wuhan University).
 
 # Env. Info.
 #### 1. Our test env: Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 8
