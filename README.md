@@ -21,9 +21,9 @@
 >
 >@unpublished{LikunSchenTPS2024,  
   author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Harrison, Gareth},  
-  title  = {Improved PINN-Based Parameters Estimation for Distributed Energy Resources Analysis in Microgrid},  
-  note   = {Submitted to IEEE Trans. on Smart Grid},  
-  year   = {2024},  
+  title  = {Adaptable Parameters Estimation for Microgrid Distributed Energy Resources Using Modified Physics-Informed Neural Network},  
+  note   = {Submitted to IEEE Trans. on Sustainable Energy},  
+  year   = {2025},  
 >}
   
 # HOW TO USE
