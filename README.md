@@ -3,11 +3,13 @@
 
 #### Thanks to the contributions made by Yifan Wang, Wei Sun, Gareth Harrison, Bo Wang and Lei Shang.
 
-#### If you request collaboration or tech. support, please contact W.Sun@ed.ac.uk (Dr. Wei Sun, Edinburgh University) dongxz@whu.edu.cn (Prof. Dong, Wuhan University).
+#### plz contact schenlk@ieee.org (Likun S/Chen) if you need further information about the PINN application in microgrid.
+
+#### If you request collaboration or tech. support, please contact W.Sun@ed.ac.uk (Dr. Wei Sun, Edinburgh University) and dongxz@whu.edu.cn (Prof. Dong, Wuhan University).
 
 # Env. Info.
-#### 1. Our test env: Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 8
-#### 2. RTDS: RSCAD FX Version >= 1.2
+#### 1. Our test env: Python Version 3.11 backends PyTorch 2.0.1 + CU117 on NVIDIA A30 × 8 and PyTorch  2.5.1 Python  3.12(ubuntu22.04) Cuda  12.4 on RTX 4090 × 2 with 32 vCPU Intel(R) Xeon(R) Gold 6430
+#### 2. RTDS: RSCAD FX Version >= 2.0
 # Basic principles plz refer to our papers
 
 >LATEX CITATION:
@@ -19,10 +21,17 @@
   year   = {2024},  
 >}
 >
->@unpublished{LikunSchenTPS2024,  
-  author = {Chen, Likun and Dong, Xuzhu and Wang, Yifan and Sun, Wei and Harrison, Gareth},  
+>@unpublished{LikunSchenTSTE2025,  
+  author = {Chen, Likun and Wang, Yifan and Sun, Wei and Dong, Xuzhu and Wang, Bo},  
   title  = {Adaptable Parameters Estimation for Microgrid Distributed Energy Resources Using Modified Physics-Informed Neural Network},  
   note   = {Submitted to IEEE Trans. on Sustainable Energy},  
+  year   = {2025},  
+>}
+>
+>>@unpublished{LikunSchenIJEPES2025,  
+  author = {Chen, Likun and Wang, Yifan and Sun, Wei and Dong, Xuzhu and Shang, Lei},  
+  title  = {Modified Hard-Constrained PINNs for Physically Consistent Microgrid Transient Response Modeling},  
+  note   = {Submitted to IJEPES},  
   year   = {2025},  
 >}
   
@@ -50,3 +59,4 @@ The established model is saved in `./RTDS-MODEL/SimpleMicrogrid`，the directory
 1. `Microgrid1.dfx` : our established model, contains really perfect control and satisfying amount of detailed controls and measurement points XD. (I'm really super satisfied with the microgrid model I've built, even though my supervisor thinks it's quite ordinary. Still, I believe I've done a great job.)
 2. `Microgrid1.sib` : runtime file, using this for RTDS simulation while running.
 3. `Microgrid1.pdf` : official microgrid introduction document, differs from our model, but still has some reference value.
+4. `Banshee.dfx` : more complex microgrid cluster system, complicated enough for data generation.
